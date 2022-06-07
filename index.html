@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+    <title>McPepe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <header class="header">
+        <div>
+            <img class="logo mx-auto d-block" src="assets/logo.png">
+            <h1 class="text-center">McPepe</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="card col-sm m-3 shadow" style="width: 18rem;" id="hamburger1">
+                <img src="https://mcdonalds.es/api/cms/images/mcdonalds-es/713f5f5c-d75c-4337-90b8-4cb830b89d6f_1080x943_Menu%CC%814You_triple+cheeseburguer.png?auto=compress,format"
+                    class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Hamburguesa Simple</h5>
+                    <p class="m-0">Precio: <span id="precio-hamb1">400</span>$</p>
+                    <p>Cantidad: <span id="cant1">0</span></p>
+                    <buttom href="#" class="btn btn-primary" onclick="agregarHamburguesa1()">Agregar</buttom>
+                </div>
+            </div>
+            <div class="card col-sm m-3 shadow" style="width: 18rem; ">
+                <img src="https://mcdonalds.es/api/cms/images/mcdonalds-es/713f5f5c-d75c-4337-90b8-4cb830b89d6f_1080x943_Menu%CC%814You_triple+cheeseburguer.png?auto=compress,format"
+                    class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Hamburguesa Doble</h5>
+                    <p class="m-0">Precio: <span id="precio-hamb2">600</span>$</p>
+                    <p>Cantidad: <span id="cant2">0</span></p>
+                    <buttom href="#" class="btn btn-primary" onclick="agregarHamburguesa2()">Agregar</buttom>
+                </div>
+            </div>
+            <div class="card col-sm m-3 shadow" style="width: 18rem;">
+                <img src="https://mcdonalds.es/api/cms/images/mcdonalds-es/713f5f5c-d75c-4337-90b8-4cb830b89d6f_1080x943_Menu%CC%814You_triple+cheeseburguer.png?auto=compress,format"
+                    class="card-img-top">
+                <div class="card-body">
+                    <h5 class="card-title">Hamburguesa Triple</h5>
+                    <p class="m-0">Precio: <span id="precio-hamb3">950</span>$</p>
+                    <p>Cantidad: <span id="cant3">0</span></p>
+                    <buttom href="#" class="btn btn-primary" onclick="agregarHamburguesa3()">Agregar</buttom>
+                </div>
+            </div>
+
+            <button class="btn btn-primary mt-5" onclick="calcularTotal()">Calcular Total</button>
+        </div>
+
+        <h3 class="my-5">Pagar con Tarjeta <input type="checkbox" id="pagar-tarjeta"></h3>
+
+        <h3 class="pb-5">Total a pagar: <span id="total-pagar"></span>$</h3>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+            crossorigin="anonymous"></script>
+    </div>
+</body>
+
+</html>
